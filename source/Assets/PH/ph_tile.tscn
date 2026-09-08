@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://rmpoyiqu7cqc"]
+
+[ext_resource type="Texture2D" uid="uid://cmt4fibc7tjcl" path="res://Assets/PH/SLBPHTiles.png" id="1_u8ano"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpde8"]
+size = Vector2(16, 16)
+
+[node name="PHTile" type="Area2D" unique_id=1553030539]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1362368562]
+shape = SubResource("RectangleShape2D_lpde8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1179882891]
+texture = ExtResource("1_u8ano")
+hframes = 4
+vframes = 4
