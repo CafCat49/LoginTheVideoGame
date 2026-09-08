@@ -1,2 +1,2 @@
-# LoginTheVideoGame
-A Video game for Login Student Union at NTNU Gjøvik
+# Super Login Bros
+A Video game for Login Student Club at NTNU Gjøvik
