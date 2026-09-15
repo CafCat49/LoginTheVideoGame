@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://buh086aknn3cd"]
 
-[ext_resource type="Script" uid="uid://o825skn4ffmq" path="res://Scenes/PlayerController.gd" id="1_eglq2"]
+[ext_resource type="Script" uid="uid://o825skn4ffmq" path="res://Scripts/PlayerController.gd" id="1_eglq2"]
 [ext_resource type="Texture2D" uid="uid://cmt4fibc7tjcl" path="res://Assets/PH/SLBPHTiles.png" id="1_iti4p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_it1ls"]
@@ -111,4 +111,162 @@ hframes = 4
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/StaticBody2D7" unique_id=1409786493]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="World2" type="Node2D" parent="." unique_id=1426354084]
+position = Vector2(488, 488)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="World2" unique_id=510653929]
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D" unique_id=954439518]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D" unique_id=2127135656]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="World2" unique_id=521329082]
+position = Vector2(16, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D2" unique_id=472667342]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D2" unique_id=38304888]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="World2" unique_id=28913513]
+position = Vector2(32, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D3" unique_id=1431241916]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D3" unique_id=1607498774]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="World2" unique_id=1139629216]
+position = Vector2(48, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D4" unique_id=856392191]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D4" unique_id=1109142567]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="World2" unique_id=207224429]
+position = Vector2(64, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D5" unique_id=1320247667]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D5" unique_id=539355323]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="World2" unique_id=1635847933]
+position = Vector2(80, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D6" unique_id=153499912]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D6" unique_id=730972955]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="World2" unique_id=324005592]
+position = Vector2(96, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World2/StaticBody2D7" unique_id=1370643809]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World2/StaticBody2D7" unique_id=538766880]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="World3" type="Node2D" parent="." unique_id=2092241090]
+position = Vector2(712, 488)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="World3" unique_id=577333124]
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D" unique_id=519479740]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D" unique_id=2133697740]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="World3" unique_id=74946432]
+position = Vector2(16, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D2" unique_id=1775355161]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D2" unique_id=1335298152]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="World3" unique_id=505386429]
+position = Vector2(32, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D3" unique_id=379518321]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D3" unique_id=1920690238]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="World3" unique_id=751715861]
+position = Vector2(48, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D4" unique_id=1044233357]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D4" unique_id=251360086]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="World3" unique_id=1342109725]
+position = Vector2(64, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D5" unique_id=897985015]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D5" unique_id=819189195]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="World3" unique_id=1456751398]
+position = Vector2(80, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D6" unique_id=804629186]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D6" unique_id=1484479509]
+shape = SubResource("RectangleShape2D_aljbh")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="World3" unique_id=452678199]
+position = Vector2(96, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="World3/StaticBody2D7" unique_id=1351365852]
+texture = ExtResource("1_iti4p")
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World3/StaticBody2D7" unique_id=1847179647]
 shape = SubResource("RectangleShape2D_aljbh")
