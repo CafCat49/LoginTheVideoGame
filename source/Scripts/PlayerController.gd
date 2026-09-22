@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
-@export var speed: float = 300.0
-@export var jump_velocity: float = -400.0
-@export var has_double_jump: bool = true
-@export var flight_turn_speed: float = 100.0
+@export var speed: float = 300.0				#Your ground speed
+@export var jump_velocity: float = -400.0		#How high you jump
+@export var has_double_jump: bool				#Two jumps?
+@export var flight_turn_speed: float = 150.0	#2nd speed when jumping
+@export var lock_y_pos: float					#Camera y axis
 
 var last_direction: float = 0.0
 var extra_jump: bool = false

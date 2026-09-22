@@ -1,38 +1,15 @@
 [gd_scene format=3 uid="uid://buh086aknn3cd"]
 
-[ext_resource type="Script" uid="uid://o825skn4ffmq" path="res://Scripts/PlayerController.gd" id="1_eglq2"]
+[ext_resource type="PackedScene" uid="uid://bxkxwkgtbidyy" path="res://Scenes/player.tscn" id="1_dtjkg"]
 [ext_resource type="Texture2D" uid="uid://cmt4fibc7tjcl" path="res://Assets/PH/SLBPHTiles.png" id="1_iti4p"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_it1ls"]
-size = Vector2(16, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aljbh"]
 size = Vector2(16, 16)
 
 [node name="TestLevel" type="Node2D" unique_id=1058057818]
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=5942345]
+[node name="Player" parent="." unique_id=1130258013 instance=ExtResource("1_dtjkg")]
 position = Vector2(640, 440)
-script = ExtResource("1_eglq2")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=595216460]
-position = Vector2(0, 8)
-shape = SubResource("RectangleShape2D_it1ls")
-
-[node name="Node2D" type="Node2D" parent="Player" unique_id=94710805]
-
-[node name="Sprite2D" type="Sprite2D" parent="Player/Node2D" unique_id=1201524499]
-texture = ExtResource("1_iti4p")
-hframes = 4
-vframes = 4
-frame = 1
-
-[node name="Sprite2D2" type="Sprite2D" parent="Player/Node2D" unique_id=528790374]
-position = Vector2(0, 16)
-texture = ExtResource("1_iti4p")
-hframes = 4
-vframes = 4
-frame = 1
 
 [node name="World" type="Node2D" parent="." unique_id=1154423095]
 position = Vector2(600, 488)
