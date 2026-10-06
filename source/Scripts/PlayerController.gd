@@ -8,9 +8,15 @@ extends CharacterBody2D
 
 var last_direction: float = 0.0
 var extra_jump: bool = false
+var spawn_point: Vector2
+
 
 func _init() -> void:
 	extra_jump = has_double_jump
+	add_to_group("player")
+	
+func _ready() -> void:
+	spawn_point = position
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -44,5 +50,15 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * current_speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
-
+	
 	move_and_slide()
+
+func setSpawn(pos : Vector2) -> void:
+	spawn_point = pos
+
+func respawnPlayer() -> void:
+	position = spawn_point
+	velocity.x = 0
+	velocity.y = 0
+	
+	
