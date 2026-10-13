@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bxkxwkgtbidyy" path="res://Scenes/player.tscn" id="2_kc0iv"]
 [ext_resource type="Script" uid="uid://dan5a8xvnif3e" path="res://TriggerEvent.gd" id="3_qf70a"]
-[ext_resource type="PackedScene" uid="uid://dqvepkjpy6yw3" path="res://Scenes/enemy.tscn" id="4_ktfj3"]
+[ext_resource type="PackedScene" uid="uid://b8ah8i4fty5vp" path="res://Scenes/enemy2.tscn" id="4_ktfj3"]
 [ext_resource type="Texture2D" uid="uid://cahfu7uymh3w3" path="res://SLBPHTiles.png" id="SLBPHTiles"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0"]
@@ -71,8 +71,8 @@ target_node = NodePath("../Player")
 visible = false
 shape = SubResource("RectangleShape2D_it1ls")
 
-[node name="Enemy" parent="." unique_id=1067439643 instance=ExtResource("4_ktfj3")]
-position = Vector2(592, 288)
+[node name="Enemy2" parent="." unique_id=235500471 instance=ExtResource("4_ktfj3")]
+position = Vector2(528, 272)
 
 [connection signal="body_entered" from="FallArea" to="FallArea" method="_on_body_entered"]
 [connection signal="body_entered" from="CheckPoint1" to="CheckPoint1" method="_on_body_entered"]
