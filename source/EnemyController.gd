@@ -1,13 +1,26 @@
 extends CharacterBody2D
 
-@export var SPEED = 200.0
+@export var SPEED = 100.0
+@export var JUMP_VELOCITY = -200
 @export var direction = 1;
 @export var is_ledge_turning = true
 @export var is_wall_bouncing = true
+@export var is_jumping = true
 
 @onready var ledge_check = $RayCast2D
 
-@onready var ray_offset_x = ledge_check.position.x
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+func _ready() -> void:
+	var total_bounce_time = (2 * abs(JUMP_VELOCITY)) / gravity
+	var bounce_distance = SPEED * total_bounce_time 
+	
+	if (is_jumping):
+		ledge_check.position.x = bounce_distance
+		ledge_check.position.y = 0
+		ledge_check.target_position = Vector2(0, 150)
+		
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -24,6 +37,8 @@ func _process(delta: float) -> void:
 		if (wall_normal.x < 0 and direction > 0) or (wall_normal.x > 0 and direction < 0):
 			hit_wall = true
 		
+	if is_jumping and is_on_floor():
+		velocity.y = JUMP_VELOCITY
 	
 	if hit_ledge or hit_wall:
 		turn_around()
@@ -35,4 +50,5 @@ func _process(delta: float) -> void:
 	
 func turn_around():
 	direction *= -1
-	ledge_check.position.x = ray_offset_x * direction
+	ledge_check.position.x = abs(ledge_check.position.x) * direction
+	ledge_check.force_raycast_update()
